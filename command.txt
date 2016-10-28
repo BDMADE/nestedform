@@ -1,3 +1,6 @@
 # All commands of following project are given below:
 1. rails new nestedform
 
+2. rails g scaffold customer name:string
+
+3. rails g model order item:string customer:belongs_to
