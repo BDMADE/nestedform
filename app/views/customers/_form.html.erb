@@ -16,6 +16,16 @@
     <%= f.text_field :name %>
   </div>
 
+  Orders:
+  <ul>
+    <%= f.fields_for :rders do |orders_form| %>
+      <li>
+        <%= orders_form.label :item %>
+        <%= orders_form.text_field :item %>                
+      </li>
+    <% end %>
+  </ul>
+
   <div class="actions">
     <%= f.submit %>
   </div>
